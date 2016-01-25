@@ -18,7 +18,8 @@
             table.style.border = "1px solid black";
             table.style.borderCollapse = "collapse";
             table.style.width = "50%";
-            table.style.marginLeft = "300px";
+            table.style.position = "relative";
+            table.style.left = "300px";
             for (i = 0; i < 10; i++) {
                 row = document.createElement('tr');
                 table.appendChild(row);
@@ -37,10 +38,10 @@
             leftButton.textContent = "Move Left";
             rightButton.textContent = "Move Right";
             leftButton.onclick = function() {
-                table.style.marginLeft = parseFloat(table.style.marginLeft) - 100 + 'px';
+                table.style.left = parseFloat(table.style.left) - 100 + 'px';
             };
             rightButton.onclick = function() {
-                table.style.marginLeft = parseFloat(table.style.marginLeft) + 100 + 'px';
+                table.style.left = parseFloat(table.style.left) + 100 + 'px';
             };
         };
     }
